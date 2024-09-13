@@ -1,0 +1,211 @@
+Reset and global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #5b5858;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav form {
+  display: flex;
+}
+
+nav input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #666;
+}
+
+/* Main Content Styles */
+.container {
+  /* width: 90%;
+  max-width: 1200px; */
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* Movie List and Cards */
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.movie-card {
+  background: #000;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(20% - 1rem);
+  margin: 0.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card h3 {
+  font-size: 1rem;
+}
+
+.movie-card p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+
+.moviepageimg{
+  height: 250px
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.pagination button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 1rem;
+}
+
+/* Movie Detail Page */
+.movie-detail-page {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.movie-details-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.movie-info {
+  flex: 1;
+  text-align: left;
+  margin-left: 35px
+}
+
+.movie-info p {
+  margin: 0.5rem 0;
+  color: #fff;
+  font-size: 20px;
+}
+.cardoverview p {
+margin-top: 1px;
+color: #fff;
+font-size: 20px;
+}
+
+.movie-detail-page img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+.movie-detail-page .col-md-8{
+  padding-left: 120px;
+}
+.movierow{
+  display: flex;
+}
+.poster {
+  width: 300px; /* Adjust width as needed */
+}
+
+.movie-poster {
+  flex-shrink: 0;
+}
+
+.castHeading {
+  text-align: left;
+  padding-left: 20px
+}
+
+.cast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cast-member {
+  text-align: center;
+  flex: 1 1 150px; 
+  color: #fff
+}
+
+.cast-member img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
